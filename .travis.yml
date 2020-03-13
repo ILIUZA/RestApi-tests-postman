@@ -3,7 +3,7 @@ node_js:
   - "12.16.1"
 
 install:
-  - npm install newman
+  - npm init -y
  
 script: 
   - usr/lib/node_modules/newman/bin/newman.js run tests/Flask_API_Stores.postman_collection.json -e tests/Testing-REST-Api.postman_environment.json
