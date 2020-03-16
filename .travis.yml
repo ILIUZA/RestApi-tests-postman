@@ -3,8 +3,8 @@ node_js:
   - "12.16.1"
 
 install:
-  - npm init -y
+  - npm install newman
  
 script: 
-  - /usr/lib/node_modules/newman/bin/newman.js run /home/ubuntu/Postman/Flask-app-api-test-postman/tests/Flask_API_Stores.postman_collection.json -e /home/ubuntu/Postman/Flask-app-api-test-postman/tests/Testing-REST-Api.postman_environment.json
+  - newman run /home/ubuntu/Postman/Flask-app-api-test-postman/tests/Flask_API_Stores.postman_collection.json -e /home/ubuntu/Postman/Flask-app-api-test-postman/tests/Testing-REST-Api.postman_environment.json
 
