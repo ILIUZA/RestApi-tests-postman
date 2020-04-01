@@ -3,7 +3,9 @@ node_js:
   - "12.16.1"
 
 install:
-  - npm init -y
+  - "npm init -y"
+  - "pip install -r requirements.txt"
+  - "npm install -g newman"
 
 before_script:
   - node --version
