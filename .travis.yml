@@ -4,7 +4,7 @@ node_js:
 
 install:
   - "npm init -y"
-  - "pip install -r requirements.txt"
+  - "pip install --user -r requirements.txt"
   - "npm install -g newman"
 
 before_script:
