@@ -11,5 +11,6 @@ before_script:
   - newman --version
  
 script: 
+  - python app.py &
   - newman run tests/Flask_API_Stores.postman_collection.json -e tests/Testing-REST-Api.postman_environment.json
 
